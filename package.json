@@ -1,0 +1,24 @@
+{
+  "name": "dickersoninspections.com",
+  "version": "0.0.0",
+  "description": "Marketing page for Dickerson Inspections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Graham <mikegrahamcode@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "metalsmith": "^2.3.0"
+  },
+  "dependencies": {
+    "less": "^3.9.0",
+    "metalsmith-fingerprint-ignore": "^2.0.0",
+    "metalsmith-in-place": "^4.2.0",
+    "metalsmith-layouts": "^2.3.0",
+    "metalsmith-lesser": "^1.0.4",
+    "metalsmith-markdown": "^1.1.0",
+    "metalsmith-serve": "0.0.7"
+  }
+}

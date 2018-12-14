@@ -1,0 +1,142 @@
+@main-color: #370000;
+@main-dark: #130000;
+@grad-lightest: #fff2cc;
+@grad-light: #cf734c;
+@grad-dark: #714739;
+@text-color: #fdfdfd;
+
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway-Regular.ttf");
+}
+
+html, body {
+    height: 100%;
+    background: @main-color;
+    background: -moz-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, @main-color), color-stop(100%, @main-dark));
+    background: -webkit-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: -o-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: -ms-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: linear-gradient(to right, @main-color 0%, @main-dark 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+}
+
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background: @main-color;
+    background: -moz-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, @main-color), color-stop(100%, @main-dark));
+    background: -webkit-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: -o-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: -ms-linear-gradient(left, @main-color 0%, @main-dark 100%);
+    background: linear-gradient(to right, @main-color 0%, @main-dark 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    color: @text-color;
+}
+
+#contact {
+    /*height: 100%;*/
+    font-size: 2em;
+}
+
+#title {
+    margin: 0;
+    font-size: 2em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+.row {
+  padding: 0 5%;
+}
+
+ul li {
+  font-size: 1.25em;
+}
+
+#offers ul li, #services ul li {
+    list-style-type: none;
+}
+
+.content {
+    padding: 6%;
+    text-align: center;
+    width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.animal {
+  padding: 1.5em;
+  background: radial-gradient(ellipse at center, @grad-lightest 0%,
+    @grad-light 45%, @grad-dark 60%, @main-color 90%);
+  border: 0.15em solid @text-color;
+}
+
+.inline-3 {
+  display: inline-block;
+  width: 24%;
+}
+
+.inline-6 {
+  display: inline-block;
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1em;
+  }
+  .inline-3 {
+    width: 90%%;
+    padding: 5%;
+    margin: 5%;
+  }
+  .inline-6 {
+    width: 100%;
+    padding: 5%;
+    margin: 5%;
+  }
+}
+
+@media (min-width: 960px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  #title {
+    font-size: 3.5em;
+  }
+}
